@@ -19,7 +19,7 @@
         $(document).ready(function () {
 
 
-            $.get("http://localhost:49211/Home/GetQuotesAsync", function (data) {
+            $.get(window.location.href + "/Home/GetQuotesAsync", function (data) {
                 $('.loader').hide();
                 var calendar = $('#calendar').fullCalendar({
                     header: {
